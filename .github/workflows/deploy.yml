@@ -17,6 +17,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # Use any modern Node version
+
+      - name: Generate index.html
+        run: node generate-index.js
+        
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
