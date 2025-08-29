@@ -38,5 +38,5 @@ const output = `
 </html>
 `;
 
-fs.writeFileSync(path.join(rootDir, 'docs', 'index.html'), output);
+fs.writeFileSync(path.join(rootDir, 'index.html'), output);
 console.log('✅ index.html generated.');
