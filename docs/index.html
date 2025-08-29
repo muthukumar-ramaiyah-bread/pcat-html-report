@@ -1,27 +1,98 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Index of Files</title>
+  <meta charset="UTF-8" />
+  <title>📁 File Index</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 1em;
+    }
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style: none;
+      padding-left: 1em;
+    }
+    .toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font: inherit;
+      color: #444;
+      outline-offset: 2px;
+      user-select: none;
+    }
+    .toggle:focus {
+      outline: 2px solid #0366d6;
+    }
+    .toggle[aria-expanded="true"]::before {
+      content: "▼ ";
+      color: #0366d6;
+    }
+    .toggle[aria-expanded="false"]::before {
+      content: "▶ ";
+      color: #888;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #1e1e1e;
+        color: #ddd;
+      }
+      a {
+        color: #58a6ff;
+      }
+      .toggle {
+        color: #aaa;
+      }
+      .toggle[aria-expanded="true"]::before {
+        color: #58a6ff;
+      }
+      .toggle[aria-expanded="false"]::before {
+        color: #666;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1>📦 Index of Files</h1>
-  📁 <strong>apicurlscheck/</strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="apicurlscheck/-gGmNk-9TcavOFe044NbcA_54.html">-gGmNk-9TcavOFe044NbcA_54.html</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="apicurlscheck/N__owYO9RzeapE4fVkylvg_53.html">N__owYO9RzeapE4fVkylvg_53.html</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="apicurlscheck/POB6ePDuSTaR3MHdn7j5Kw_49.html">POB6ePDuSTaR3MHdn7j5Kw_49.html</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="apicurlscheck/trIWElT8SleqqenKBigCng_50.html">trIWElT8SleqqenKBigCng_50.html</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="apicurlscheck/uSPgCGRMQTyigX6QZ6bPHQ_52.html">uSPgCGRMQTyigX6QZ6bPHQ_52.html</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="apicurlscheck/u_6JPFkMSIqCbIF27JIpGg_51.html">u_6JPFkMSIqCbIF27JIpGg_51.html</a><br>
-📁 <strong>apisampleuat/</strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="apisampleuat/17_CyTm3Oi8SjW6BfGXlqV6EA.html">17_CyTm3Oi8SjW6BfGXlqV6EA.html</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="apisampleuat/19_jG1_3epXTUy17-lFKInQ5A.html">19_jG1_3epXTUy17-lFKInQ5A.html</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="apisampleuat/20_WVbgA6wORsWAMLtOP349FQ.html">20_WVbgA6wORsWAMLtOP349FQ.html</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="apisampleuat/SFjOr2jxSTCynVg9tNK7yw_16.html">SFjOr2jxSTCynVg9tNK7yw_16.html</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="apisampleuat/XkzcpCiESfasIiBO8Oi8bw_13.html">XkzcpCiESfasIiBO8Oi8bw_13.html</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="apisampleuat/sov6PX_GQNaVvOUctCnOzw_14.html">sov6PX_GQNaVvOUctCnOzw_14.html</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;📄 <a href="apisampleuat/twf_CcUFQEm21P7O3NHCuA_15.html">twf_CcUFQEm21P7O3NHCuA_15.html</a><br>
+  <ul>
+        <li class="folder">
+          <button class="toggle" aria-expanded="false"> 📁 apicurlscheck</button>
+          <div class="nested" style="display:none; margin-left: 1em;">
+            <ul><li class="file">📄 <a href="apicurlscheck/-gGmNk-9TcavOFe044NbcA_54.html" target="_blank">-gGmNk-9TcavOFe044NbcA_54.html</a></li><li class="file">📄 <a href="apicurlscheck/N__owYO9RzeapE4fVkylvg_53.html" target="_blank">N__owYO9RzeapE4fVkylvg_53.html</a></li><li class="file">📄 <a href="apicurlscheck/POB6ePDuSTaR3MHdn7j5Kw_49.html" target="_blank">POB6ePDuSTaR3MHdn7j5Kw_49.html</a></li><li class="file">📄 <a href="apicurlscheck/trIWElT8SleqqenKBigCng_50.html" target="_blank">trIWElT8SleqqenKBigCng_50.html</a></li><li class="file">📄 <a href="apicurlscheck/uSPgCGRMQTyigX6QZ6bPHQ_52.html" target="_blank">uSPgCGRMQTyigX6QZ6bPHQ_52.html</a></li><li class="file">📄 <a href="apicurlscheck/u_6JPFkMSIqCbIF27JIpGg_51.html" target="_blank">u_6JPFkMSIqCbIF27JIpGg_51.html</a></li></ul>
+          </div>
+        </li>
+      
+        <li class="folder">
+          <button class="toggle" aria-expanded="false"> 📁 apisampleuat</button>
+          <div class="nested" style="display:none; margin-left: 1em;">
+            <ul><li class="file">📄 <a href="apisampleuat/17_CyTm3Oi8SjW6BfGXlqV6EA.html" target="_blank">17_CyTm3Oi8SjW6BfGXlqV6EA.html</a></li><li class="file">📄 <a href="apisampleuat/19_jG1_3epXTUy17-lFKInQ5A.html" target="_blank">19_jG1_3epXTUy17-lFKInQ5A.html</a></li><li class="file">📄 <a href="apisampleuat/20_WVbgA6wORsWAMLtOP349FQ.html" target="_blank">20_WVbgA6wORsWAMLtOP349FQ.html</a></li><li class="file">📄 <a href="apisampleuat/21_1Irg-SqXTziaH4Ab8AyqhQ.html" target="_blank">21_1Irg-SqXTziaH4Ab8AyqhQ.html</a></li><li class="file">📄 <a href="apisampleuat/SFjOr2jxSTCynVg9tNK7yw_16.html" target="_blank">SFjOr2jxSTCynVg9tNK7yw_16.html</a></li><li class="file">📄 <a href="apisampleuat/XkzcpCiESfasIiBO8Oi8bw_13.html" target="_blank">XkzcpCiESfasIiBO8Oi8bw_13.html</a></li><li class="file">📄 <a href="apisampleuat/sov6PX_GQNaVvOUctCnOzw_14.html" target="_blank">sov6PX_GQNaVvOUctCnOzw_14.html</a></li><li class="file">📄 <a href="apisampleuat/twf_CcUFQEm21P7O3NHCuA_15.html" target="_blank">twf_CcUFQEm21P7O3NHCuA_15.html</a></li></ul>
+          </div>
+        </li>
+      </ul>
 
+  <script>
+    document.querySelectorAll('.toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        button.nextElementSibling.style.display = expanded ? 'none' : 'block';
+      });
+    });
+  </script>
 </body>
 </html>
