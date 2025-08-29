@@ -13,86 +13,216 @@
       line-height: 1.6;
     }
     h1 {
-      font-size: 1.8em;
+      font-size: 2em;
       margin-bottom: 1em;
     }
-    a {
-      color: #0366d6;
-      text-decoration: none;
+    #controls {
+      margin-bottom: 1em;
     }
-    a:hover {
-      text-decoration: underline;
+    #search {
+      padding: 0.4em;
+      font-size: 1em;
+      width: 60%;
+      max-width: 400px;
+    }
+    button {
+      margin-left: 0.5em;
+      padding: 0.4em 0.8em;
+      font-size: 0.9em;
+      cursor: pointer;
     }
     ul {
       list-style: none;
       padding-left: 1em;
+      margin: 0;
     }
-    .toggle {
-      background: none;
-      border: none;
-      cursor: pointer;
-      font: inherit;
-      color: #444;
-      outline-offset: 2px;
-      user-select: none;
-    }
-    .toggle:focus {
-      outline: 2px solid #0366d6;
-    }
-    .toggle[aria-expanded="true"]::before {
-      content: "▼ ";
+    .file a {
+      text-decoration: none;
       color: #0366d6;
     }
-    .toggle[aria-expanded="false"]::before {
-      content: "▶ ";
-      color: #888;
+    .file a:hover {
+      text-decoration: underline;
+    }
+    .file .modified {
+      color: #666;
+      font-size: 0.9em;
+      margin-left: 0.5em;
+    }
+    .folder-label {
+      cursor: pointer;
+      user-select: none;
+      display: inline-block;
+      margin-left: 0.2em;
+    }
+    .toggle {
+      display: none;
+    }
+    .toggle + .folder-label::before {
+      content: '▶';
+      display: inline-block;
+      width: 1em;
+      margin-right: 0.2em;
+      transition: transform 0.2s ease;
+    }
+    .toggle:checked + .folder-label::before {
+      content: '▼';
+    }
+    .toggle ~ .nested {
+      display: none;
+      margin-left: 1em;
+      border-left: 1px dashed #ccc;
+      padding-left: 1em;
+    }
+    .toggle:checked ~ .nested {
+      display: block;
     }
     @media (prefers-color-scheme: dark) {
       body {
-        background: #1e1e1e;
+        background-color: #1e1e1e;
         color: #ddd;
       }
-      a {
+      .file a {
         color: #58a6ff;
       }
-      .toggle {
+      .file .modified {
         color: #aaa;
       }
-      .toggle[aria-expanded="true"]::before {
-        color: #58a6ff;
-      }
-      .toggle[aria-expanded="false"]::before {
-        color: #666;
+      .toggle ~ .nested {
+        border-left: 1px dashed #444;
       }
     }
   </style>
 </head>
 <body>
-  <h1>📦 Index of Files</h1>
+  <h1>📦 Elegant File Index</h1>
+  <div id="controls">
+    <input type="text" id="search" placeholder="🔍 Search files or folders..." />
+    <button onclick="toggleAll(true)">Expand All</button>
+    <button onclick="toggleAll(false)">Collapse All</button>
+  </div>
   <ul>
-        <li class="folder">
-          <button class="toggle" aria-expanded="false"> 📁 apicurlscheck</button>
-          <div class="nested" style="display:none; margin-left: 1em;">
-            <ul><li class="file">📄 <a href="apicurlscheck/uSPgCGRMQTyigX6QZ6bPHQ_52.html" target="_blank">uSPgCGRMQTyigX6QZ6bPHQ_52.html</a></li></ul>
+        <li class="folder" data-name="apicurlscheck">
+          <input type="checkbox" id="folder-0" class="toggle" />
+          <label for="folder-0" class="folder-label">📁 apicurlscheck</label>
+          <div class="nested">
+            <ul>
+        <li class="file" data-name="uspgcgrmqtyigx6qz6bphq_52.html">
+          🌐 <a href="apicurlscheck/uSPgCGRMQTyigX6QZ6bPHQ_52.html" target="_blank">uSPgCGRMQTyigX6QZ6bPHQ_52.html</a>
+          <span class="modified">(2025-08-29)</span>
+        </li>
+      </ul>
           </div>
         </li>
       
-        <li class="folder">
-          <button class="toggle" aria-expanded="false"> 📁 apisampleuat</button>
-          <div class="nested" style="display:none; margin-left: 1em;">
-            <ul><li class="file">📄 <a href="apisampleuat/17_CyTm3Oi8SjW6BfGXlqV6EA.html" target="_blank">17_CyTm3Oi8SjW6BfGXlqV6EA.html</a></li><li class="file">📄 <a href="apisampleuat/19_jG1_3epXTUy17-lFKInQ5A.html" target="_blank">19_jG1_3epXTUy17-lFKInQ5A.html</a></li><li class="file">📄 <a href="apisampleuat/20_WVbgA6wORsWAMLtOP349FQ.html" target="_blank">20_WVbgA6wORsWAMLtOP349FQ.html</a></li><li class="file">📄 <a href="apisampleuat/21_1Irg-SqXTziaH4Ab8AyqhQ.html" target="_blank">21_1Irg-SqXTziaH4Ab8AyqhQ.html</a></li><li class="file">📄 <a href="apisampleuat/SFjOr2jxSTCynVg9tNK7yw_16.html" target="_blank">SFjOr2jxSTCynVg9tNK7yw_16.html</a></li><li class="file">📄 <a href="apisampleuat/XkzcpCiESfasIiBO8Oi8bw_13.html" target="_blank">XkzcpCiESfasIiBO8Oi8bw_13.html</a></li><li class="file">📄 <a href="apisampleuat/sov6PX_GQNaVvOUctCnOzw_14.html" target="_blank">sov6PX_GQNaVvOUctCnOzw_14.html</a></li><li class="file">📄 <a href="apisampleuat/twf_CcUFQEm21P7O3NHCuA_15.html" target="_blank">twf_CcUFQEm21P7O3NHCuA_15.html</a></li></ul>
+        <li class="folder" data-name="apisampleuat">
+          <input type="checkbox" id="folder-1" class="toggle" />
+          <label for="folder-1" class="folder-label">📁 apisampleuat</label>
+          <div class="nested">
+            <ul>
+        <li class="file" data-name="17_cytm3oi8sjw6bfgxlqv6ea.html">
+          🌐 <a href="apisampleuat/17_CyTm3Oi8SjW6BfGXlqV6EA.html" target="_blank">17_CyTm3Oi8SjW6BfGXlqV6EA.html</a>
+          <span class="modified">(2025-08-29)</span>
+        </li>
+      
+        <li class="file" data-name="19_jg1_3epxtuy17-lfkinq5a.html">
+          🌐 <a href="apisampleuat/19_jG1_3epXTUy17-lFKInQ5A.html" target="_blank">19_jG1_3epXTUy17-lFKInQ5A.html</a>
+          <span class="modified">(2025-08-29)</span>
+        </li>
+      
+        <li class="file" data-name="20_wvbga6worswamltop349fq.html">
+          🌐 <a href="apisampleuat/20_WVbgA6wORsWAMLtOP349FQ.html" target="_blank">20_WVbgA6wORsWAMLtOP349FQ.html</a>
+          <span class="modified">(2025-08-29)</span>
+        </li>
+      
+        <li class="file" data-name="21_1irg-sqxtziah4ab8ayqhq.html">
+          🌐 <a href="apisampleuat/21_1Irg-SqXTziaH4Ab8AyqhQ.html" target="_blank">21_1Irg-SqXTziaH4Ab8AyqhQ.html</a>
+          <span class="modified">(2025-08-29)</span>
+        </li>
+      
+        <li class="file" data-name="sfjor2jxstcynvg9tnk7yw_16.html">
+          🌐 <a href="apisampleuat/SFjOr2jxSTCynVg9tNK7yw_16.html" target="_blank">SFjOr2jxSTCynVg9tNK7yw_16.html</a>
+          <span class="modified">(2025-08-29)</span>
+        </li>
+      
+        <li class="file" data-name="sov6px_gqnavvouctcnozw_14.html">
+          🌐 <a href="apisampleuat/sov6PX_GQNaVvOUctCnOzw_14.html" target="_blank">sov6PX_GQNaVvOUctCnOzw_14.html</a>
+          <span class="modified">(2025-08-29)</span>
+        </li>
+      
+        <li class="file" data-name="twf_ccufqem21p7o3nhcua_15.html">
+          🌐 <a href="apisampleuat/twf_CcUFQEm21P7O3NHCuA_15.html" target="_blank">twf_CcUFQEm21P7O3NHCuA_15.html</a>
+          <span class="modified">(2025-08-29)</span>
+        </li>
+      
+        <li class="file" data-name="xkzcpciesfasiibo8oi8bw_13.html">
+          🌐 <a href="apisampleuat/XkzcpCiESfasIiBO8Oi8bw_13.html" target="_blank">XkzcpCiESfasIiBO8Oi8bw_13.html</a>
+          <span class="modified">(2025-08-29)</span>
+        </li>
+      </ul>
           </div>
         </li>
       </ul>
 
-  <script>
-    document.querySelectorAll('.toggle').forEach(button => {
-      button.addEventListener('click', () => {
-        const expanded = button.getAttribute('aria-expanded') === 'true';
-        button.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-        button.nextElementSibling.style.display = expanded ? 'none' : 'block';
-      });
+<script>
+  const searchInput = document.getElementById('search');
+
+  searchInput.addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+
+    const allFolders = document.querySelectorAll('.folder');
+    const allFiles = document.querySelectorAll('.file');
+
+    // Reset everything first
+    allFolders.forEach(folder => {
+      folder.style.display = '';
+      const checkbox = folder.querySelector('.toggle');
+      if (checkbox) checkbox.checked = false;
     });
-  </script>
+
+    allFiles.forEach(file => {
+      file.style.display = '';
+    });
+
+    if (!query) return; // If search is empty, show everything
+
+    // Hide everything initially
+    allFolders.forEach(folder => folder.style.display = 'none');
+    allFiles.forEach(file => file.style.display = 'none');
+
+    // Show only matches and expand their parents
+    [...allFolders, ...allFiles].forEach(item => {
+      const name = item.dataset.name || '';
+      if (name.includes(query)) {
+        item.style.display = '';
+        expandParents(item);
+      }
+    });
+  });
+
+  function expandParents(el) {
+    let parent = el.parentElement;
+    while (parent) {
+      if (parent.classList.contains('nested')) {
+        const folder = parent.parentElement;
+        if (folder && folder.classList.contains('folder')) {
+          folder.style.display = ''; // Make sure folder is visible
+          const toggle = folder.querySelector('.toggle');
+          if (toggle) toggle.checked = true; // Expand it
+        }
+      }
+      parent = parent.parentElement;
+    }
+  }
+
+  function toggleAll(expand) {
+    document.querySelectorAll('.toggle').forEach(input => {
+      input.checked = expand;
+    });
+    document.querySelectorAll('.folder').forEach(folder => {
+      folder.style.display = '';
+    });
+  }
+</script>
+
 </body>
 </html>
