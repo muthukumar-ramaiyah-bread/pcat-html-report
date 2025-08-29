@@ -1,0 +1,24 @@
+# File: .github/workflows/deploy-on-tag.yml
+
+name: Deploy to GitHub Pages on Tag
+
+on:
+  push:
+    tags:
+      - 'v*'  # Triggers on tags like v1.0, v2.0.1, etc.
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
