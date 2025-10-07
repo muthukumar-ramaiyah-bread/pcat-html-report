@@ -1,0 +1,656 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <title>JUnit Report</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <style>
+            body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f9f9fb;
+            padding: 20px;
+            color: #333;
+            }
+            .container {
+            max-width: 960px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            }
+            h1, h2 {
+            text-align: center;
+            margin: 10px 0 20px;
+            }
+            table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            }
+            th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            }
+            th {
+            background-color: #f1f3f5;
+            font-weight: 600;
+            }
+            tr.clickable:hover {
+            background-color: #f8f9fa;
+            cursor: pointer;
+            }
+            .inner-table {
+            width: 100%;
+            margin-top: 10px;
+            }
+            .inner-table th {
+            background: #f6f6f6;
+            }
+            .info-left,
+            .info-right {
+              display: inline-block;
+            }
+            .info-row {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 4px 8px;
+              font-family: sans-serif;
+            }
+        </style>
+        </head>
+        <body>
+        <div class="container">
+            <h1>🧪 Card-API-Tests Summary</h1>
+            <div class="info-row">
+            <div class="info-left"><span class="label">🕒 EST: </span> Oct 07, 2025, 01:26:16 PM</div>
+            <div class="info-right"><span class="label">⌛ Duration: </span> 5.47 s</div>
+            </div>
+        <h2>Test Summary</h2>
+        <table>
+            <tr>
+            <th>Total Tests</th>
+            <th style="color:green;">Passed</th>
+            <th style="color:red;">Failed</th>
+            <th style="color:orange;">Skipped</th>
+            <th style="color:blue;">Pass %</th>
+            </tr>
+            <tr>
+            <td>39</td>
+            <td style="color:green; font-weight:bold;">30</td>
+            <td style="color:red; font-weight:bold;">3</td>
+            <td style="color:orange; font-weight:bold;">6</td>
+            <td style="color:blue; font-weight:bold;">90</td>
+            </tr>
+        </table>
+
+        <h2>Suite Summary</h2>
+        <table>
+            <tr>
+            <th>Total Suites</th>
+            <th style="color:green;">Passed</th>
+            <th style="color:red;">Failed</th>
+            </tr>
+            <tr>
+            <td>12</td>
+            <td style="color:green; font-weight:bold;">11</td>
+            <td style="color:red; font-weight:bold;">1</td>
+            </tr>
+        </table>
+
+        <h2>Test Suite Breakdown</h2>
+        <table>
+            <tr>
+            <th>Suite Name</th>
+            <th>Total</th>
+            <th style="color:green;">Passed</th>
+            <th style="color:red;">Failed</th>
+            <th style="color:orange;">Skipped</th>
+            <th style="color:blue;">Pass %</th>
+            <th>Status</th>
+            <th>⌛ Secs</th>
+            </tr>
+            
+        <tr class="clickable" data-id="0">
+        <td>sample/tests/chaining.test.js</td>
+        <td>4</td>
+        <td style="color:green">4</td>
+        <td style="color:red">0</td>
+        <td style="color:orange">0</td>
+        <td style="color:blue">100</td>
+        <td style="color:green; font-weight:bold;">
+            PASSED
+        </td>
+        <td>1.10</td>
+        </tr>
+        <tr class="detail" data-id="0" style="display:none;">
+        <td colspan="8">
+            <table class="inner-table">
+            <tr><th>Test Case</th><th>Status</th><th>⌛ Secs</th></tr>
+            
+                <tr>
+                <td>API Chaining with PactumJS > Chained flow should create, retrieve, update, and delete an user</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>1.10</td>
+                </tr>
+                <tr>
+                <td>API Chaining with PactumJS > add(1, 1) -> 2</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>API Chaining with PactumJS > add(1, 2) -> 3</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>API Chaining with PactumJS > add(2, 1) -> 3</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        
+        <tr class="clickable" data-id="1">
+        <td>sample/tests/cipher-deciper.test.js</td>
+        <td>2</td>
+        <td style="color:green">2</td>
+        <td style="color:red">0</td>
+        <td style="color:orange">0</td>
+        <td style="color:blue">100</td>
+        <td style="color:green; font-weight:bold;">
+            PASSED
+        </td>
+        <td>0.00</td>
+        </tr>
+        <tr class="detail" data-id="1" style="display:none;">
+        <td colspan="8">
+            <table class="inner-table">
+            <tr><th>Test Case</th><th>Status</th><th>⌛ Secs</th></tr>
+            
+                <tr>
+                <td>Chiper - Dechiper tests > this test validates whether encryptions works</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>Chiper - Dechiper tests > this test validates whether decryption works</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        
+        <tr class="clickable" data-id="2">
+        <td>sample/tests/db-query.test.js</td>
+        <td>4</td>
+        <td style="color:green">1</td>
+        <td style="color:red">0</td>
+        <td style="color:orange">3</td>
+        <td style="color:blue">100</td>
+        <td style="color:green; font-weight:bold;">
+            PASSED
+        </td>
+        <td>2.57</td>
+        </tr>
+        <tr class="detail" data-id="2" style="display:none;">
+        <td colspan="8">
+            <table class="inner-table">
+            <tr><th>Test Case</th><th>Status</th><th>⌛ Secs</th></tr>
+            
+                <tr>
+                <td>Azure SQL Connection Thru Client > Run a simple select query - UAT</td>
+                <td style="color:orange; font-weight:bold;">
+                    Skipped
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>Azure SQL Connection Thru Client > Run a simple select query - DB2 - SIT</td>
+                <td style="color:orange; font-weight:bold;">
+                    Skipped
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>Azure SQL Connection Thru Client > Run a simple select query - DB2 - UAT</td>
+                <td style="color:orange; font-weight:bold;">
+                    Skipped
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>Azure SQL Connection Thru Client > Run a simple select query from Azure and DB2 from core - it works in VDI for both sit and uat</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>2.57</td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        
+        <tr class="clickable" data-id="3">
+        <td>sample/tests/decrypt.test.js</td>
+        <td>3</td>
+        <td style="color:green">2</td>
+        <td style="color:red">0</td>
+        <td style="color:orange">1</td>
+        <td style="color:blue">100</td>
+        <td style="color:green; font-weight:bold;">
+            PASSED
+        </td>
+        <td>0.00</td>
+        </tr>
+        <tr class="detail" data-id="3" style="display:none;">
+        <td colspan="8">
+            <table class="inner-table">
+            <tr><th>Test Case</th><th>Status</th><th>⌛ Secs</th></tr>
+            
+                <tr>
+                <td>Decrypt Keys tests > this test is to decrypt - custom</td>
+                <td style="color:orange; font-weight:bold;">
+                    Skipped
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>Decrypt Keys tests > this test is to encrypt</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>Decrypt Keys tests > this test is to decrypt</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        
+        <tr class="clickable" data-id="4">
+        <td>sample/tests/deep-merge.test.js</td>
+        <td>1</td>
+        <td style="color:green">1</td>
+        <td style="color:red">0</td>
+        <td style="color:orange">0</td>
+        <td style="color:blue">100</td>
+        <td style="color:green; font-weight:bold;">
+            PASSED
+        </td>
+        <td>0.01</td>
+        </tr>
+        <tr class="detail" data-id="4" style="display:none;">
+        <td colspan="8">
+            <table class="inner-table">
+            <tr><th>Test Case</th><th>Status</th><th>⌛ Secs</th></tr>
+            
+                <tr>
+                <td>Deep merge sample tests > test to merge values into XML2</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.01</td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        
+        <tr class="clickable" data-id="5">
+        <td>sample/tests/environment-specific.test.js</td>
+        <td>5</td>
+        <td style="color:green">3</td>
+        <td style="color:red">0</td>
+        <td style="color:orange">2</td>
+        <td style="color:blue">100</td>
+        <td style="color:green; font-weight:bold;">
+            PASSED
+        </td>
+        <td>0.00</td>
+        </tr>
+        <tr class="detail" data-id="5" style="display:none;">
+        <td colspan="8">
+            <table class="inner-table">
+            <tr><th>Test Case</th><th>Status</th><th>⌛ Secs</th></tr>
+            
+                <tr>
+                <td>Environment specific tests > this test is specific to uat/sit</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>Environment specific tests > this test is specific to sit</td>
+                <td style="color:orange; font-weight:bold;">
+                    Skipped
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>Environment specific tests > this test is specific to uat</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>Environment specific tests > this test is specific to SIT, this will be skipped from UAT execution</td>
+                <td style="color:orange; font-weight:bold;">
+                    Skipped
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>Environment specific tests > this test is not specific to any environment</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        
+        <tr class="clickable" data-id="6">
+        <td>sample/tests/faker.test.js</td>
+        <td>2</td>
+        <td style="color:green">2</td>
+        <td style="color:red">0</td>
+        <td style="color:orange">0</td>
+        <td style="color:blue">100</td>
+        <td style="color:green; font-weight:bold;">
+            PASSED
+        </td>
+        <td>0.00</td>
+        </tr>
+        <tr class="detail" data-id="6" style="display:none;">
+        <td colspan="8">
+            <table class="inner-table">
+            <tr><th>Test Case</th><th>Status</th><th>⌛ Secs</th></tr>
+            
+                <tr>
+                <td>Faker data tests > test to generate a valid address</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>Faker data tests > test to generate a random uuid</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        
+        <tr class="clickable" data-id="7">
+        <td>sample/tests/kafka.test.js</td>
+        <td>1</td>
+        <td style="color:green">1</td>
+        <td style="color:red">0</td>
+        <td style="color:orange">0</td>
+        <td style="color:blue">100</td>
+        <td style="color:green; font-weight:bold;">
+            PASSED
+        </td>
+        <td>0.27</td>
+        </tr>
+        <tr class="detail" data-id="7" style="display:none;">
+        <td colspan="8">
+            <table class="inner-table">
+            <tr><th>Test Case</th><th>Status</th><th>⌛ Secs</th></tr>
+            
+                <tr>
+                <td>Kafka Integration Sample Test > Kafka Integration Sample Test</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.27</td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        
+        <tr class="clickable" data-id="8">
+        <td>sample/tests/protegrity.test.js</td>
+        <td>8</td>
+        <td style="color:green">8</td>
+        <td style="color:red">0</td>
+        <td style="color:orange">0</td>
+        <td style="color:blue">100</td>
+        <td style="color:green; font-weight:bold;">
+            PASSED
+        </td>
+        <td>1.19</td>
+        </tr>
+        <tr class="detail" data-id="8" style="display:none;">
+        <td colspan="8">
+            <table class="inner-table">
+            <tr><th>Test Case</th><th>Status</th><th>⌛ Secs</th></tr>
+            
+                <tr>
+                <td>Protegrity Sample APIs Tests - PI_NUM_R4 > Protegrity detokenize/unprotect Sample API Test</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.25</td>
+                </tr>
+                <tr>
+                <td>Protegrity Sample APIs Tests - PI_NUM_R4 > Protegrity detokenize/unprotect Sample API Test - detokenizePIN method</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.13</td>
+                </tr>
+                <tr>
+                <td>Protegrity Sample APIs Tests - PI_NUM_R4 > Protegrity tokenize/protect Sample API Test</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.13</td>
+                </tr>
+                <tr>
+                <td>Protegrity Sample APIs Tests - PI_NUM_R4 > Protegrity tokenize/protect Sample API Test - tokenizeCardNumber</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.13</td>
+                </tr>
+                <tr>
+                <td>Protegrity Sample APIs Tests - SSN_NUM_R4 > Protegrity detokenize/unprotect Sample API Test</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.14</td>
+                </tr>
+                <tr>
+                <td>Protegrity Sample APIs Tests - SSN_NUM_R4 > Protegrity detokenize/unprotect Sample API Test - detokenizeSSN method</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.13</td>
+                </tr>
+                <tr>
+                <td>Protegrity Sample APIs Tests - SSN_NUM_R4 > Protegrity tokenize/protect Sample API Test</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.14</td>
+                </tr>
+                <tr>
+                <td>Protegrity Sample APIs Tests - SSN_NUM_R4 > Protegrity tokenize/protect Sample API Test - tokenizeCardNumber</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.13</td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        
+        <tr class="clickable" data-id="9">
+        <td>sample/tests/redis.test.js</td>
+        <td>1</td>
+        <td style="color:green">1</td>
+        <td style="color:red">0</td>
+        <td style="color:orange">0</td>
+        <td style="color:blue">100</td>
+        <td style="color:green; font-weight:bold;">
+            PASSED
+        </td>
+        <td>0.11</td>
+        </tr>
+        <tr class="detail" data-id="9" style="display:none;">
+        <td colspan="8">
+            <table class="inner-table">
+            <tr><th>Test Case</th><th>Status</th><th>⌛ Secs</th></tr>
+            
+                <tr>
+                <td>Redis Integration Sample Test > Redis Integration Sample Test</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.11</td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        
+        <tr class="clickable" data-id="10">
+        <td>sample/tests/soft-assertion.test.js</td>
+        <td>3</td>
+        <td style="color:green">0</td>
+        <td style="color:red">3</td>
+        <td style="color:orange">0</td>
+        <td style="color:blue">0</td>
+        <td style="color:red; font-weight:bold;">
+            FAILED
+        </td>
+        <td>0.19</td>
+        </tr>
+        <tr class="detail" data-id="10" style="display:none;">
+        <td colspan="8">
+            <table class="inner-table">
+            <tr><th>Test Case</th><th>Status</th><th>⌛ Secs</th></tr>
+            
+                <tr>
+                <td>Soft Assertion Test with vitest and pactumjs > PactumJS chaining defaulted with hard assertion</td>
+                <td style="color:red; font-weight:bold;">
+                    Failed
+                </td>
+                <td>0.16</td>
+                </tr>
+                <tr>
+                <td>Soft Assertion Test with vitest and pactumjs > PactumJS chaining combined with vitests expect.soft bundled into aggregateAssertion</td>
+                <td style="color:red; font-weight:bold;">
+                    Failed
+                </td>
+                <td>0.03</td>
+                </tr>
+                <tr>
+                <td>Soft Assertion Test with vitest and pactumjs > Vitests expect.soft</td>
+                <td style="color:red; font-weight:bold;">
+                    Failed
+                </td>
+                <td>0.00</td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        
+        <tr class="clickable" data-id="11">
+        <td>sample/tests/tagging.test.js</td>
+        <td>5</td>
+        <td style="color:green">5</td>
+        <td style="color:red">0</td>
+        <td style="color:orange">0</td>
+        <td style="color:blue">100</td>
+        <td style="color:green; font-weight:bold;">
+            PASSED
+        </td>
+        <td>0.00</td>
+        </tr>
+        <tr class="detail" data-id="11" style="display:none;">
+        <td colspan="8">
+            <table class="inner-table">
+            <tr><th>Test Case</th><th>Status</th><th>⌛ Secs</th></tr>
+            
+                <tr>
+                <td>Tagging tests > @Smoke > this test is specific to smoke</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>Tagging tests > @Regression > this test is specific to regression</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>Tagging tests > @Smoke @Regression > this test is specific to regression and smoke</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>Tagging tests > this test is specific to smoke</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+                <tr>
+                <td>Tagging tests > this test is specific to regression</td>
+                <td style="color:green; font-weight:bold;">
+                    Passed
+                </td>
+                <td>0.00</td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        
+        </table>
+        </div>
+
+        <script>
+        document.querySelectorAll('tr.clickable').forEach(row => {
+            row.addEventListener('click', () => {
+            const id = row.dataset.id;
+            const detail = document.querySelector(`tr.detail[data-id="${id}"]`);
+            detail.style.display = detail.style.display === 'table-row' ? 'none' : 'table-row';
+            });
+        });
+        </script>
+        </body>
+        </html>
+        
